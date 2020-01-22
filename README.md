@@ -10,7 +10,7 @@ Log information:
 - SessionState
 
 Example in Log Analytics:
-![alt text](https://raw.githubusercontent.com/JPJJansen/WVD-Public/master/images/LogAnalytics.PNG)
+![alt text](https://raw.githubusercontent.com/JPJJansen/WVD-Public/master/images/LogAnalytics.png)
 
 You can use this data for example in Grafana
 ![alt text](https://raw.githubusercontent.com/JPJJansen/WVD-Public/master/images/Grafana.png)
