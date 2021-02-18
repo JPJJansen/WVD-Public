@@ -53,7 +53,7 @@ Write-Host '*** WVD AIB CUSTOMIZER PHASE *** CONFIG *** Create temp folder for s
 Write-Host '*** WVD AIB CUSTOMIZER PHASE *** INSTALL *** Install customize script ***'
 Invoke-WebRequest -Uri 'https://imagebuilderwvd.blob.core.windows.net/powershell/Windows_10_VDI_Optimize-master.zip' -OutFile 'c:\temp\Windows_10_VDI_Optimize-master.zip'
 Expand-Archive -Path 'C:\temp\Windows_10_VDI_Optimize-master.zip' -DestinationPath 'C:\temp\Windows_10_VDI_Optimize-master\'  -Force
-Invoke-Expression -Command "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned"
+Invoke-Expression -Command 'Set-ExecutionPolicy -ExecutionPolicy RemoteSigned'
 Invoke-Expression -Command 'C:\Temp\Windows_10_VDI_Optimize-master\Windows_10_VDI_Optimize-master\Win10_VirtualDesktop_Optimize.ps1 -Verbose'
 Start-Sleep -Seconds 90
 Write-Host '*** WVD AIB CUSTOMIZER PHASE *** INSTALL *** Install Customize script *** - Exit Code: ' $LASTEXITCODE
